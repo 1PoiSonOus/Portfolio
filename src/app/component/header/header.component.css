@@ -1,0 +1,62 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #000000; /* Black background for the navbar */
+    border-bottom: 2px solid #8E05C2; /* Bottom border in main color */
+  }
+  
+  .navbar-brand {
+    color: #8E05C2; /* Main color for the brand */
+    font-weight: bold; /* Make the brand name bold */
+    font-size: 1.8rem; /* Larger font size for brand */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .navbar-brand:hover {
+    color: #700B97; /* Change color on hover */
+  }
+  
+  .navbar-nav {
+    flex: 1; /* Allow the nav items to take available space */
+    justify-content: center; /* Center the nav items */
+  }
+  
+  .nav-link {
+    color: #fff; /* White text for nav links */
+    font-size: 1.2rem; /* Font size for nav links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    margin: 0 30px; /* Increased space between nav links */
+  }
+  
+  .nav-link:hover {
+    color: #8E05C2; /* Change color on hover */
+    text-decoration: underline; /* Underline effect on hover */
+  }
+  
+  .navbar-toggler {
+    border-color: #8E05C2; /* Border color for toggler button */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='%238E05C2'%3E%3Cpath stroke='rgba(0,0,0,0.1)' stroke-width='1' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* Custom color for the toggler icon */
+  }
+  
+  .collapse.navbar-collapse {
+    /* When collapsed */
+    background-color: #000000; /* Black background when expanded */
+  }
+  
+  .collapse.navbar-collapse .nav-link {
+    color: #8E05C2; /* Main color for links in collapsed menu */
+  }
+  
+  .collapse.navbar-collapse .nav-link:hover {
+    color: #700B97; /* Change color on hover in collapsed menu */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-nav {
+      margin-top: 10px; /* Spacing for nav links in mobile view */
+    }
+  }
+  

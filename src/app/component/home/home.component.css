@@ -1,0 +1,95 @@
+/* Home Page Styling */
+.home-container {
+    display: flex;
+    flex-direction: column; /* Stack welcome message and profile */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* Welcome Message */
+.welcome-message {
+    animation: fadeIn 1s; /* Add fade-in animation */
+    margin-bottom: 20px; /* Space between welcome message and profile */
+}
+
+.welcome-message h2 {
+    font-size: 2rem;
+    color: #8E05C2; /* Main color */
+    text-align: center;
+}
+
+/* Profile Styling */
+.profile {
+    text-align: center;
+    animation: slideIn 1s ease-out; /* Add slide-in animation */
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #fff; 
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #8E05C2; 
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #3E065F; 
+}
+
+/* Button Styling */
+.about-button {
+    background-color: #8E05C2; 
+    color: #3E065F; 
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+.about-button:hover {
+    background-color: #000; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    color: #3E065F; /* Change text color */
+    border: 2px solid #3E065F; /* Add a border with the specified color */
+    padding: 10px 20px; /* Maintain consistent padding */
+}
+
+.about-button:active {
+    transform: scale(1); /* Reset scale when button is pressed */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px); /* Slide from above */
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,142 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #000; /* Black background */
+    color: #700B97; /* White text */
+    min-height: 100vh; /* Full viewport height */
+}
+
+.welcome-message {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 4px solid #8E05C2; /* Purple border */
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #8E05C2; /* Purple color */
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #3E065F; /* Dark purple */
+}
+
+.description {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.row {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center sections in the row */
+    margin-top: 20px; /* Space above the row */
+    gap: 20px; /* Space between sections */
+}
+
+.education, .experience {
+    background-color: #1A1A1A; /* Dark background for sections */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside sections */
+    flex: 1; /* Grow to fill the row */
+    max-width: 400px; /* Limit width for smaller size */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+h3 {
+    color: #8E05C2; /* Purple for section titles */
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #8E05C2; /* Purple for section title */
+}
+
+p, ul {
+    color: white; /* White text for details */
+}
+
+ul {
+    list-style-type: disc; /* Bullet points for lists */
+    padding-left: 20px; /* Indent list */
+}
+
+li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+.skills {
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    background-color: #3E065F; /* Background for skill bar */
+    border-radius: 25px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%; /* Full width */
+}
+
+.skill-icon {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.skill-percentage {
+    background-color: #8E05C2; /* Purple color for the skill percentage */
+    height: 100%; /* Full height */
+    border-radius: 25px; /* Rounded corners */
+    transition: width 0.5s; /* Smooth transition */
+}
+
+.experience-item, .certificates, .skills, .courses {
+    margin-bottom: 20px; /* Space between items */
+}
+
+.experience h3 {
+    font-size: 2rem; /* Larger title font size */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Centered title */
+}
+
+.experience-item p, .certificates h4, .skills h4, .courses h4 {
+    margin: 5px 0; /* Space between paragraph lines */
+}
+
+.experience-item ul, .certificates ul, .courses ul {
+    list-style-type: disc; /* Bullet points for lists */
+    padding-left: 20px; /* Indent list */
+}
+
+.experience-item li, .certificates li, .courses li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+
+
+

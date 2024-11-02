@@ -1,0 +1,36 @@
+.footer {
+    background-color: #000000; /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px; /* Padding for footer */
+    text-align: center; /* Center text */
+}
+
+.footer-container {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-around; /* Space between sections */
+    flex-wrap: wrap; /* Wrap items to the next line if necessary */
+}
+
+.footer-section {
+    margin: 10px; /* Margin between sections */
+}
+
+.footer-section h3 {
+    color: #8E05C2; /* Color for section headings */
+}
+
+.footer-section a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color for links */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.footer-section a:hover {
+    color: #8E05C2; /* Change color on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Space above copyright */
+    border-top: 1px solid #8E05C2; /* Top border */
+    padding-top: 10px; /* Space above copyright text */
+}

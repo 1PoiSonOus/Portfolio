@@ -1,0 +1,96 @@
+/* General body styles */
+.Projects-container {
+    text-align: center; /* Center text for the main container */
+    background-color: #000; /* Black background */
+    color: white; /* White text */
+    font-family: Arial, sans-serif; /* Set font */
+    margin: 0; /* Remove default margin */
+    padding-bottom: 30px; /* Add padding to prevent overlap with footer */
+    min-height: 100vh; /* Ensure the container takes full height */
+}
+
+/* Project title styles */
+.project-title {
+    color: #8E05C2; /* Purple color for title */
+    font-size: 2.5rem; /* Large title font size */
+    margin-bottom: 20px; /* Margin below the title */
+}
+
+/* Card styles */
+.project-card {
+    border-radius: 10px; /* Rounded corners for cards */
+    background-color: #1A1A1A; /* Dark gray for card background */
+    border: 1px solid #8E05C2; /* Purple border for cards */
+}
+
+/* Card title styles */
+.card-title {
+    color: #8E05C2; /* Purple for card titles */
+}
+
+/* Card text styles */
+.card-text {
+    color: #ffffff; /* White for card text */
+}
+
+/* Badge styles for technology stack */
+.tech-stack .badge {
+    margin-right: 5px; /* Space between badges */
+    background-color: #8E05C2; /* Purple for badges */
+    color: #ffffff; /* White text for badges */
+}
+
+/* Button styles */
+.btn-main {
+    background-color: #8E05C2; /* Purple button background */
+    border-color: #8E05C2; /* Border color */
+    color: #ffffff; /* White text on buttons */
+}
+
+.btn-main:hover {
+    background-color: #700B97; /* Darker purple on hover */
+    border-color: #700B97; /* Border color on hover */
+}
+
+.btn-secondary {
+    background-color: transparent; /* Transparent background */
+    color: #8E05C2; /* Purple text */
+    border: 1px solid #8E05C2; /* Purple border */
+}
+
+.btn-secondary:hover {
+    background-color: #8E05C2; /* Purple background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 2rem; /* Smaller title font size for mobile */
+    }
+
+    /* Ensure the cards stack vertically */
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust card margins */
+    .col-md-4 {
+        width: 100%; /* Full width for mobile */
+        margin-bottom: 20px; /* Add margin between cards */
+    }
+
+    /* Reduce padding for mobile */
+    .Projects-container {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+        height: auto; /* Auto height to prevent cut-off */
+    }
+
+    /* Adjust image sizes */
+    .project-card img {
+        max-width: 100%; /* Full-width images */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
